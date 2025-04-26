@@ -1,0 +1,117 @@
+.special-offers-section {
+  padding: 60px 0;
+}
+
+.title-special-offers {
+  margin: 1rem 0rem 3rem 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 0.2rem;
+
+  text-align: center;
+}
+
+.wrapper-special-offers-section {
+  margin: 0 auto;
+
+  color: #F0F0F0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.special-offers {
+  display: flex;
+  gap: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.special-offers-card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 20px;
+  }
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.special-offers-card-image {
+  width: 100%;
+  height: 13rem;
+
+  object-fit: cover;
+  object-position: center;
+
+  @media (max-width: 900px) {
+    grid-row: span 4;
+  }
+
+  @media (max-width: 600px) {
+    grid-row: unset;
+  }
+}
+
+.special-card-title {
+  text-align: center;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  line-height: 1.7rem;
+
+  font-family: 'Montserrat', sans-serif;
+
+  margin: 1rem 0;
+
+  @media (max-width: 900px) {
+    text-align: left;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.special-offers-card-span {
+  color: white;
+  font-weight: 300;
+  font-size: 0.925rem;
+
+  line-height: 1.4rem;
+
+
+  @media (max-width: 900px) {
+    text-align: left;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.our-offers-text {
+  display: block;
+  margin-top: 4.5rem;
+
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}

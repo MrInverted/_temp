@@ -1,0 +1,821 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*--------------------*/
+:root {
+  --header-logo-height: 5rem ;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-ExtraBold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fonts/Montserrat/static/Montserrat-ThinItalic.ttf") format("ttf");
+  font-weight: 100;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-ExtraBold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../Fonts/Inter/static/Inter-ThinItalic.ttf") format("ttf");
+  font-weight: 100;
+  font-style: sans-serif;
+}
+body {
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  background-color: #0A0A0A;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.65rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+  position: relative;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+}
+@media (max-width: 900px) {
+  .header-wrapper {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  max-height: var(--header-logo-height);
+}
+
+.header-content {
+  color: #23FC0B;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.call-button {
+  padding: 12px 20px;
+  color: #23FC0B;
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: 1px solid #23FC0B;
+  border-radius: 3px;
+}
+
+.header-text {
+  color: #23FC0B;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main-section {
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.48)), url("../jpg/logo.jpg");
+  background-size: cover;
+  padding: 160px 0;
+}
+.main-section h1 {
+  color: #23FC0B;
+  margin-bottom: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+.content-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 20px;
+}
+@media (max-width: 800px) {
+  .content-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #19B608;
+}
+.logo-section img {
+  max-width: 5.5rem;
+  max-height: 5.5rem;
+}
+
+.offers-main-title {
+  color: #F0F0F0;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.offers-card-section {
+  color: #F0F0F0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.offers-card {
+  padding: 20px;
+  grid-column: span 3;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+.offers-card:nth-child(1), .offers-card:nth-child(2) {
+  grid-column: span 6;
+}
+.offers-card:nth-child(3), .offers-card:nth-child(4), .offers-card:nth-child(5) {
+  grid-column: span 4;
+}
+@media (max-width: 1100px) {
+  .offers-card:nth-child(n) {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 900px) {
+  .offers-card:nth-child(n) {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 600px) {
+  .offers-card:nth-child(n) {
+    grid-column: span 12;
+  }
+}
+
+.card-first-section-first-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.52)), url("../jpg/52820_novij-servis-mobilnij-mehanik_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-first-section-second-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.56)), url("../jpg/Depositphotos_75578437_xl-2015-1920x1268.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-second-section-first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.52)), url("../jpg/84_a793242f.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-second-section-second {
+  background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../jpg/key-repair-11.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-second-section-third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/photo_2024-08-30_13-07-43-big.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/Screenshot_2-1-696x444.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/screenshot_1-264x264.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/diagnostika-kpp-264x264.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/auto-electric-diagnostics-768x576.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/screenshot_5-2-264x264.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/proshivka-i-vosstanovlenie-blokov-srs-airbag_5-264x264.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/screenshot_3-25-264x264.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("../jpg/rusifikacija-klimat-kontrol-264x264.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.special-offers-section {
+  padding: 60px 0;
+}
+
+.title-special-offers {
+  margin: 1rem 0rem 3rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.wrapper-special-offers-section {
+  margin: 0 auto;
+  color: #F0F0F0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.special-offers {
+  display: flex;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 900px) {
+  .special-offers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.special-offers-card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .special-offers-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .special-offers-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.special-offers-card-image {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 900px) {
+  .special-offers-card-image {
+    grid-row: span 4;
+  }
+}
+@media (max-width: 600px) {
+  .special-offers-card-image {
+    grid-row: unset;
+  }
+}
+
+.special-card-title {
+  text-align: center;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  line-height: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0;
+}
+@media (max-width: 900px) {
+  .special-card-title {
+    text-align: left;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .special-card-title {
+    text-align: center;
+  }
+}
+
+.special-offers-card-span {
+  color: white;
+  font-weight: 300;
+  font-size: 0.925rem;
+  line-height: 1.4rem;
+}
+@media (max-width: 900px) {
+  .special-offers-card-span {
+    text-align: left;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .special-offers-card-span {
+    text-align: center;
+  }
+}
+
+.our-offers-text {
+  display: block;
+  margin-top: 4.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.why-trust-us {
+  margin: 0 auto;
+  /* display: grid; */
+  color: #F0F0F0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+}
+
+.why-trust-us-question-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.question-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.question-conteiner {
+  width: 100%;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quesion-png-conteiner {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 0.3rem solid white;
+  border-radius: 50%;
+}
+
+.question-span-conteiner {
+  margin: auto 0;
+  margin-left: 0.9rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  word-break: break-all;
+}
+
+.contact-us-background-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-us-wrapper {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.contact-us-h5 {
+  padding: 0.9rem 0;
+  font-size: 1.75rem;
+}
+
+.contact-us-span {
+  width: 20rem;
+  padding: 0.75rem;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.contact-us-number {
+  padding-top: 0.25rem;
+  padding-bottom: 1.6rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+
+.contact-us-input {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.7rem;
+  padding-right: 8rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  border-radius: 0px;
+  border: none;
+}
+
+.contact-us-button {
+  padding: 0.45rem 6.52rem;
+  margin: 0.5rem 0rem;
+  color: #bebebe;
+  font-family: "Inter" sans-serif;
+  font-size: 0.9rem;
+  font-weight: 550;
+  letter-spacing: 0.085rem;
+  background-color: transparent;
+  border: 0.2rem solid #BEBEBE;
+}
+
+.reviews-h1 {
+  margin: 0px auto;
+  text-align: center;
+  font-weight: 900;
+}
+
+.reviews-wrapper {
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  color: #F0F0F0;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 900px) {
+  .reviews-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .reviews-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.review-card {
+  padding: 0 1rem;
+}
+
+.review-text {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.review-person-name {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #23FC0B;
+}
+
+.fricuent-questions-h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.wrapper-friquent-question {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #19B608;
+  letter-spacing: 0.1rem;
+}
+.wrapper-friquent-question summary {
+  font-size: 1.4rem;
+}
+
+.frequent-answer {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.footer {
+  border-top: 1px solid #848484;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  height: 8rem;
+  width: 8rem;
+}
+
+.footer-logo-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer-span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.links {
+  display: grid;
+}
+
+.link {
+  padding: 0.7rem 0;
+  color: #00C800;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+}
+
+.png-links-wrapper {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+}
+
+.link-png {
+  display: block;
+  flex-shrink: 0;
+}/*# sourceMappingURL=index.css.map */

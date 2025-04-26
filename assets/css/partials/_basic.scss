@@ -1,0 +1,175 @@
+:root {
+  --header-logo-height: 5rem
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-Black.ttf') format('ttf');
+  font-weight: 900;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('ttf');
+  font-weight: 800;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-ExtraLight.ttf') format('ttf');
+  font-weight: 200;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../Fonts/Montserrat/static/Montserrat-ThinItalic.ttf') format('ttf');
+  font-weight: 100;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-Black.ttf') format('ttf');
+  font-weight: 900;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-ExtraBold.ttf') format('ttf');
+  font-weight: 800;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-ExtraLight.ttf') format('ttf');
+  font-weight: 200;
+  font-style: sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../Fonts/Inter/static/Inter-ThinItalic.ttf') format('ttf');
+  font-weight: 100;
+  font-style: sans-serif;
+}
+
+
+
+body {
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+
+  background-color: #0A0A0A;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.65rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+  position: relative;
+}

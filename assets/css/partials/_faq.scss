@@ -1,0 +1,27 @@
+.fricuent-questions {}
+
+.fricuent-questions-h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.wrapper-friquent-question {
+  margin-top: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  color: #19B608;
+  letter-spacing: 0.1rem;
+
+  summary {
+    font-size: 1.4rem;
+  }
+}
+
+.frequent-answer {
+  margin-top: 20px;
+  font-size: 18px;
+}

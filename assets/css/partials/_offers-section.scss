@@ -1,0 +1,135 @@
+.offers-section {}
+
+.offers-main-title {
+  color: #F0F0F0;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.offers-card-section {
+  color: #F0F0F0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+
+
+}
+
+.offers-card {
+  padding: 20px;
+  grid-column: span 3;
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    grid-column: span 6;
+  }
+
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5) {
+    grid-column: span 4;
+  }
+
+  &:nth-child(n) {
+    @media (max-width: 1100px) {
+      grid-column: span 4;
+    }
+
+    @media (max-width: 900px) {
+      grid-column: span 6;
+    }
+
+    @media (max-width: 600px) {
+      grid-column: span 12;
+    }
+  }
+}
+
+
+.card-first-section-first-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 52%)), url("../jpg/52820_novij-servis-mobilnij-mehanik_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-first-section-second-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 56%)), url("../jpg/Depositphotos_75578437_xl-2015-1920x1268.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-second-section-first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 52%)), url("../jpg/84_a793242f.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-second-section-second {
+  background: linear-gradient(rgba(0, 0, 0, 56%), rgba(0, 0, 0, 56%)), url("../jpg/key-repair-11.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-second-section-third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/photo_2024-08-30_13-07-43-big.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/Screenshot_2-1-696x444.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/screenshot_1-264x264.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/diagnostika-kpp-264x264.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.third-fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/auto-electric-diagnostics-768x576.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/screenshot_5-2-264x264.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/proshivka-i-vosstanovlenie-blokov-srs-airbag_5-264x264.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/screenshot_3-25-264x264.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fourth-fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 55%)), url("../jpg/rusifikacija-klimat-kontrol-264x264.jpg");
+  background-size: cover;
+  background-position: center;
+}
